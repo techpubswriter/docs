@@ -10,7 +10,7 @@ During the build, memory usage will be nearly 8G, this is the minimum level of R
 
 IMPORTANT:  Note that there is no need to install mongo, nodejs, or npm on the base operating system.  If you have any of these already installed; start over, or use another CLEAN system.
 
-Development should be performed under a regular user account (not `root`) on Linux.  There should be no need to run `sudo` at all.   Running `sudo`, even once,  during the installation -- may mess up file permissions in irreversable manner.
+Perform the Development under a regular user account (not `root`) on Linux.  Do not run `sudo` at all.   Running `sudo` even once  during the installation -- may mess up file permissions in irreversable manner.
 
 You may notice build WARNINGs related to _peer dependencies_  or other transitive dependencies.  They are typically safe to ignore unless you are coding the feature or modules that require them.
 
@@ -22,9 +22,9 @@ You may notice build WARNINGs related to _peer dependencies_  or other transitiv
 
     `curl https://install.meteor.com/ | sh`
 
-   (Under some circumstances, you may need to install a specific (older) release of Meteor instead of the latest, always check the `.meteor/release` file of the Github code repository to determine if you need to do this before you intall meteor)
+   (Under some circumstances, you may need to install a specific (older) release of Meteor instead of the latest, always check the `.meteor/release` file of the Github code repository to determine if you need to do this before you install meteor)
 
-    There is no need to install `node` or `npm`, as meteor already includes them.  Verify by:
+    You do not need to install `node` or `npm`, as meteor already includes them.  Verify by:
 
     `meteor node -v`
 
@@ -44,7 +44,7 @@ You may notice build WARNINGs related to _peer dependencies_  or other transitiv
 
     `meteor npm start`
 
-When the server is ready, you will see a box with "Server Running" title:
+When the server is ready, the following sample is observed with "Server Running" title:
 
 ```
 I20181122-12:33:53.282(0)? ➔ +-----------------------------------------------+
@@ -63,7 +63,7 @@ I20181122-12:33:53.286(0)? ➔ |                                               |
 I20181122-12:33:53.287(0)? ➔ +-----------------------------------------------+
 ```
 
-This means that a Rocket.Chat server is running from your computer. To access the server, navigate to
+This means that a Rocket.Chat server is running from your Computer. To access the server, navigate to
 
 `http://localhost:3000`
 
@@ -75,14 +75,14 @@ Other references:
 ### Editing Rocket.Chat Files
 
 Editing files is relatively simple. After you run `git clone`, the files from the repository are saved on
-your computer. You can go to the cloned repository folder and edit or add files to Rocket.Chat.
-When you make changes to Rocket.Chat the server will automatically rebuild.
+your Computer. You can go to the cloned repository folder and edit or add files to Rocket.Chat.
+When you make the changes to Rocket.Chat, the server will automatically rebuild.
 
-Sometimes changes can shut down the server, if that happens just run `meteor npm start` again.
+Sometimes, changes can shutdown the server. If that happens, run `meteor npm start` again.
 
 ## On Windows
 
-Using Windows to develop is not recommended, instead is better to create a Linux virtual machine and follow the steps mentioned above, but if for some reason you really need to build Rocket.Chat on Windows you can find a community supported guide over [here](../../installation/community-supported-installation/windows-server/).
+Using Windows to develop is not recommended, instead is better to create a Linux virtual machine and follow the steps mentioned above, but if for some reason you really need to build Rocket.Chat on Windows, you can find a community supported guide over [here](../../installation/community-supported-installation/windows-server/).
 
 ## See Also
 
